@@ -157,7 +157,8 @@ func segmentGit(p *powerline) []pwl.Segment {
 
 	indexSize, err := indexSize(p.cwd)
 	args := []string{
-		"status", "--porcelain", "-b", "--ignore-submodules",
+		//"status", "--porcelain", "-b", "--ignore-submodules",
+		"status", "--porcelain", "-b",
 	}
 
 	if *p.args.GitAssumeUnchangedSize > 0 && indexSize > (*p.args.GitAssumeUnchangedSize*1024) {

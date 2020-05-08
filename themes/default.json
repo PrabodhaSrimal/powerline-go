@@ -71,6 +71,8 @@
   "NixShellBg": 69,
   "DurationFg": 250,
   "DurationBg": 237,
+  "ModuleFg": 9,
+  "ModuleBg": 11,
   "HostnameColorizedFgMap": {
     "0": 250,
     "1": 250,
