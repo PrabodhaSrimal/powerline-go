@@ -19,12 +19,8 @@ func segmentAWS(p *powerline) []pwl.Segment {
 		region = os.Getenv("AWS_REGION")
 	}
 
-	if len(region) > 0 {
-		content = "(" + region + ")"
-	}
-
-	if len(profile) > 0 {
-		content = profile +" "+ content
+	if len(region) > 0 && len(profile) > 0 {
+		content = profile + " (" + region + ")"
 	}
 
 	if len(content) == 0 {
