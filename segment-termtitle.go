@@ -20,7 +20,7 @@ func segmentTermTitle(p *powerline) []pwl.Segment {
 	}
 
 	if p.cfg.Shell == "bash" {
-		title = "\\[\\e]0;\\u@\\h: \\w\\a\\]"
+		title = "\\[\\e]0;\\w\\a\\]"
 	} else if p.cfg.Shell == "zsh" {
 		title = "%{\033]0;%n@%m: %~\007%}"
 	} else {
